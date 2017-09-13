@@ -176,7 +176,8 @@ NULL
 #'
 #' @param x Column to compute on. Note the difference in the following methods:
 #'          \itemize{
-#'          \item \code{to_json}: it is the column containing the struct, array of the structs, the map or array of maps.
+#'          \item \code{to_json}: it is the column containing the struct, array of the structs,
+#'            the map or array of maps.
 #'          \item \code{from_json}: it is the column containing the JSON string.
 #'          }
 #' @param ... additional argument(s). In \code{to_json} and \code{from_json}, this contains
@@ -1700,8 +1701,9 @@ setMethod("to_date",
           })
 
 #' @details
-#' \code{to_json}: Converts a column containing a \code{structType}, array of \code{structType}, \code{mapType} or array of \code{mapType}.
-#' into a Column of JSON string. Resolving the Column can fail if an unsupported type is encountered.
+#' \code{to_json}: Converts a column containing a \code{structType}, array of \code{structType},
+#' a \code{mapType} or array of \code{mapType} into a column of JSON string.
+#' Resolving the Column can fail if an unsupported type is encountered.
 #'
 #' @rdname column_collection_functions
 #' @aliases to_json to_json,Column-method
